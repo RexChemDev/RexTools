@@ -4,7 +4,8 @@ setup(
     install_requires=[
         "opentrons",
         "pandas",
-        "openpyxl"
+        "openpyxl",
+        "git+https://github.com/rickwierenga/aionotify"
     ],
 
 )
