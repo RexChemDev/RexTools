@@ -1,6 +1,6 @@
 [project]
-name = "RexTools_drfragger"
-version = "0.0.1"
+name = "RexTools"
+version = "0.0.2"
 authors = [
   { name="Jack Spyvee", email="jackspyvee@comcast.net" },
 ]
