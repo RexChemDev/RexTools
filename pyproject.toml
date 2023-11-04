@@ -19,9 +19,6 @@ dependencies = [
   "aionotify @ git+https://github.com/drfragger/aionotify"
 ]
 
-[build-system]
-requires = ["setuptools"]
-
 [project.urls]
 "Homepage" = "https://github.com/drfragger/RexTools"
 "Bug Tracker" = "https://github.com/drfragger/RexTools/issues"
