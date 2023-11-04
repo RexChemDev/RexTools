@@ -1,4 +1,0 @@
-opentrons
-pandas
-openpyxl
-aionotify@ git+https://github.com/rickwierenga/aionotify

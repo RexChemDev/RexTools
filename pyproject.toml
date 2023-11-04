@@ -13,9 +13,9 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-  "opentrons",
-  "pandas",
-  "openpyxl",
+  "opentrons >= 6.2.1",
+  "pandas >= 2.1.2",
+  "openpyxl >= 3.1.2",
   "aionotify @ git+https://github.com/rickwierenga/aionotify"
 ]
 
