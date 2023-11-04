@@ -12,6 +12,15 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+  "opentrons",
+  "pandas",
+  "openpyxl",
+  "aionotify @ git+https://github.com/rickwierenga/aionotify"
+]
+
+[build-system]
+requires = ["setuptools"]
 
 [project.urls]
 "Homepage" = "https://github.com/drfragger/RexTools"
