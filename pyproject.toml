@@ -1,0 +1,18 @@
+[project]
+name = "RexTools_drfragger"
+version = "0.0.1"
+authors = [
+  { name="Jack Spyvee", email="jackspyvee@comcast.net" },
+]
+description = "Python tools for creating OT2 scripts."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/drfragger/RexTools"
+"Bug Tracker" = "https://github.com/drfragger/RexTools/issues"
