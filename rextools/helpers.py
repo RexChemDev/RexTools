@@ -25,8 +25,16 @@ class Worker:
         self.raw_instructions = self._parse_excel(sheet_name)
         self.sequence = list(coord_iter(last_letter, last_number))
         self.commands = list(map(self._command, self.raw_instructions))
-        
+        self._index = 0
     
+    @property
+    def is_finished(self):
+        if self._index >= len(self.commands):
+            return True
+        else:
+            return False
+
+
     def _command(self, sheet_entry: list):
         try:
             attempt_index = sheet_entry[self.index_col] - 1
@@ -52,5 +60,6 @@ class Worker:
         return iter(self.commands)
     
     def __next__(self):
+        self._index += 1
         return next(self.commands)
     
