@@ -6,4 +6,4 @@ RexTools.egg-info/dependency_links.txt
 RexTools.egg-info/requires.txt
 RexTools.egg-info/top_level.txt
 rextools/__init__.py
-rextools/helpers.py
+rextools/_helpers.py
