@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-RexTools.egg-info/PKG-INFO
-RexTools.egg-info/SOURCES.txt
-RexTools.egg-info/dependency_links.txt
-RexTools.egg-info/requires.txt
-RexTools.egg-info/top_level.txt
-rextools/__init__.py
-rextools/_helpers.py
