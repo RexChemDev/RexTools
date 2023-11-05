@@ -25,11 +25,11 @@ class Worker:
         self.raw_instructions = self._parse_excel(sheet_name)
         self.sequence = list(coord_iter(last_letter, last_number))
         self.commands = list(map(self._command, self.raw_instructions))
-        self._index = 0
+        self._index = -1
     
     @property
     def is_finished(self):
-        if self._index >= len(self.commands):
+        if self._index >= len(self.commands) - 1:
             return True
         else:
             return False
@@ -52,16 +52,19 @@ class Worker:
         print("Reading spreadsheet data...")
         xl_data = pd.read_excel(sheet_name, engine="openpyxl")
         raw_instructions = xl_data.values.tolist()
-        #print(raw_instructions)
         print("Finished reading.")
         return raw_instructions
     
     def __iter__(self):
-        return iter(self.commands)
+        return self
     
     def __next__(self):
+        if self.is_finished:
+            raise StopIteration
         self._index += 1
-        return next(self.commands)
+        return self.commands[self._index]
+
+        
 
 
 __all__ = [
